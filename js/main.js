@@ -88,15 +88,14 @@
 		// sort by ctrls
 		sortByNameCtrl = document.querySelector('#sort-by-name'),
 		// listjs initiliazation (all mall´s spaces)
-		spacesList = new List('spaces-list', { valueNames: ['list__link', { data: ['level'] }, { data: ['category'] } ]} ),
-
+		spacesList = new List('spaces-list', { valueNames: ['list__link', { data: ['level'] }, { data: ['category'] } ] }),
+		// search
+		searchBox = document.querySelector('.search__input'),
 		// smaller screens:
 		// open search ctrl
 		openSearchCtrl = document.querySelector('button.open-search'),
-		// main container
-		containerEl = document.querySelector('.container'),
 		// close search ctrl
-		closeSearchCtrl = spacesListEl.querySelector('button.close-search');
+		closeSearchCtrl = document.querySelector('button.close-search');
 
 	function init() {
 		// init/bind events
@@ -127,13 +126,18 @@
 
 		// sort by name ctrl - add/remove category name (css pseudo element) from list and sorts the spaces by name 
 		sortByNameCtrl.addEventListener('click', function() {
-			if( this.checked ) {
+			var label = this.querySelector('label');
+			var checkbox = this.querySelector('input');
+			checkbox.checked = !checkbox.checked;
+			if( checkbox.checked ) {
 				classie.remove(spacesEl, 'grouped-by-category');
 				spacesList.sort('list__link');
+				classie.add(label, 'active');
 			}
 			else {
 				classie.add(spacesEl, 'grouped-by-category'); 
 				spacesList.sort('category');
+				classie.remove(label, 'active');
 			}
 		});
 
@@ -182,6 +186,9 @@
 			});
 		});
 
+		searchBox.addEventListener('keyup', doSearch);
+		searchBox.addEventListener('search', doSearch);
+
 		// smaller screens: open the search bar
 		openSearchCtrl.addEventListener('click', function() {
 			openSearch();
@@ -191,6 +198,10 @@
 		closeSearchCtrl.addEventListener('click', function() {
 			closeSearch();
 		});
+	}
+
+	function doSearch() {
+		spacesList.search(searchBox.value);
 	}
 
 	/**
@@ -511,7 +522,6 @@
 		showAllLevels();
 
 		classie.add(spacesListEl, 'spaces-list--open');
-		classie.add(containerEl, 'container--overflow');
 	}
 
 	/**
@@ -519,7 +529,6 @@
 	 */
 	function closeSearch() {
 		classie.remove(spacesListEl, 'spaces-list--open');
-		classie.remove(containerEl, 'container--overflow');
 	}
 	
 	init();

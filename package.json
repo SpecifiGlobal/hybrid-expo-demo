@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "bootstrap": "^4.5",
     "desandro-classie": "^1.0",
     "list.js": "1.5",
     "normalize.css": "^8.0"
