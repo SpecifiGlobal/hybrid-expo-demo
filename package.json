@@ -1,9 +1,16 @@
 {
+  "scripts": {
+    "build": "parcel build --no-cache --no-minify  --no-autoinstall --public-url ./ --global window index.html"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
     "bootstrap": "^4.5",
     "desandro-classie": "^1.0",
     "list.js": "1.5",
     "normalize.css": "^8.0"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "parcel-plugin-clean-dist": "^0.0.6"
   }
 }
