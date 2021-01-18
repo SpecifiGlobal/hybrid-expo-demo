@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>V-Next-ibition | VirtualNEXT</title>
+		<meta name="description" content="An interactive 3D mall map concept with a search and pin indicators for every level. ">
+		<meta name="keywords" content="mall map, 3d, css, javascript, pin, levels, floor map">
+		<link rel="shortcut icon" href="favicon.aec0dfaa.ico">
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.6f62f725.css">
+		<link rel="stylesheet" type="text/css" href="all.min.a87305b6.css">
+		<link rel="stylesheet" type="text/css" href="style.d76541ad.css">
+		<script src="modernizr-custom.7eed561a.js"></script>
+	</head>
+	<body>	
+		<div class="container-fluid overflow-hidden">
+			<div class="main">
+
+				<nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-dark">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<h1 class="navbar-brand">V-NEXT-ibition</h1>
+
+					<div class="navbar-collapse collapse" id="navbar-main-collapse">
+						<ul class="navbar-nav m-auto">
+							<li class="nav-item">
+								<a href="home.html" class="nav-link"><i class="fa fa-home"></i> Home</a>
+							</li>
+							<li class="nav-item active">
+								<a href="#" class="nav-link"><i class="fa fa-vr-cardboard"></i> Equipment Hall</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link"><i class="fa fa-volume-up"></i> Speaker & Demo Stage</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link"><i class="fa fa-headphones-alt"></i> Event Office</a>
+							</li>
+						</ul>
+					</div>
+
+					<form class="form-inline my-2 my-lg-0">
+						<button class="btn btn-outline-light my-2 my-sm-0 open-search" aria-label="Show search">
+							<i class="fa fa-search"></i>
+						</button>
+					</form>
+				</nav>
+
+				<nav class="navbar navbar-light navbar-fixed-top mallnav mallnav--hidden">
+						
+					<ul class="navbar-nav centered ">
+						<li class="nav-item">
+							<button class="btn btn-dark mallnav__button--up" aria-label="Go up"><i class="fa fa-arrow-up"></i></button>
+						</li>
+						<li class="nav-item">
+							<button class="btn btn-dark mallnav__button--all-levels" aria-label="Back to all levels"><i class="fa fa-layer-group"></i></button>
+						</li>
+						<li class="nav-item">
+							<button class="btn btn-dark mallnav__button--down" aria-label="Go down"><i class="fa fa-arrow-down"></i></button>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="mall">
+					<div class="surroundings">
+						<img class="surroundings__map" src="surroundings.450ee02c.svg" alt="Surroundings">
+					</div>
+					
+					<div class="levels">
+						<div class="level level--1" aria-label="Hall 1">
+							<svg class="map map--1" viewBox="0 0 1200 800" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+								<title>Map Hall 1</title>
+								<polygon points="1035.94 787.41 1035.94 423.16 855.37 423.16 855.37 350.52 1187.28 350.52 1187.28 12.59 548.09 12.59 548.09 68.87 437.36 68.87 437.36 12.59 49.37 12.59 49.37 366.5 12.72 366.5 12.72 787.41 356.2 787.41 414.93 584.41 554.4 584.41 627.81 787.41 1035.94 787.41" class="map__ground"></polygon>
+								<path d="M1187.28,12.59V350.52H855.37v72.64h180.58V787.41H627.81l-73.41-203H414.93l-58.73,203H12.72V366.5H49.37V12.59h388V68.87H548.08V12.59h639.19M1200,0H535.36V56.28H450.09V0H36.65V353.91H0V800H365.8l2.64-9.13L424.52,597H545.44l70.39,194.65,3,8.35h429.82V410.57H868.09V363.11H1200V0h0Z" class="map__outline"></path>
+								<path d="M425.68,198.63c-6.85-14.83-46.38-30.35-58-11.24-41.24,67.9-83.63,118.16-65.12,124.22,7.55,2.48,56.77.11,94.11-54.39,21.35-31.13,31.71-52.74,29-58.59h0Z" class="map__lake"></path>
+								<ellipse cx="389.64" cy="214.94" rx="13.95" ry="13.8" class="map__tree"></ellipse>
+								<ellipse cx="369.54" cy="191.71" rx="13.95" ry="13.8" class="map__tree"></ellipse>
+								<ellipse cx="354.59" cy="220.27" rx="13.95" ry="13.8" class="map__tree"></ellipse>
+								<path d="M724.87,696.45c14.61,7.58,42.34-6.42,52.85-26.15,24.57-46.13-43.25-126.94-61.66-120.57-7.5,2.6-6.47,29.34-4.4,82.81C713.74,686.25,719.12,693.46,724.87,696.45Z" class="map__lake"></path>
+								<ellipse cx="738.82" cy="595.48" rx="13.95" ry="13.8" class="map__tree"></ellipse>
+								<ellipse cx="768.46" cy="605.4" rx="13.95" ry="13.8" class="map__tree"></ellipse>
+								<ellipse cx="744.64" cy="624.92" rx="13.95" ry="13.8" class="map__tree"></ellipse>
+								<polygon data-space="1.04" points="874.9,554.3 874.9,422.9 1036.1,422.9 1036.1,576.6 965.2,576.6 965.2,555" class="map__space"></polygon>
+								<rect x="854.08" y="639.79" width="88.09" height="147.62" class="map__space"></rect>
+								<rect x="947.85" y="639.79" width="88.09" height="147.62" class="map__space"></rect>
+								<polygon points="768.46 722.99 789.65 735.1 789.65 759.31 768.46 771.42 747.27 759.31 747.27 735.1 768.46 722.99" class="map__space"></polygon>
+								<rect x="666.88" y="565.62" width="26.26" height="25.99" class="map__space"></rect>
+								<rect data-space="1.07" x="716.66" y="354.39" width="110.72" height="136.73" class="map__space"></rect>
+								<rect x="602.1" y="354.39" width="110.72" height="136.73" class="map__space"></rect>
+								<path data-space="1.05" d="M454.76,266.19h63a24.34,24.34,0,0,1,24.47,24.21h0V489.82A24.34,24.34,0,0,1,517.74,514h-63a24.34,24.34,0,0,1-24.47-24.21h0V290.4a24.34,24.34,0,0,1,24.47-24.21h0Z" class="map__space"></path>
+								<path d="M492.72,123.19c30.57,0,55.36-24.53,55.36-54.78H437.36C437.36,98.67,462.15,123.19,492.72,123.19Z" class="map__space"></path>
+								<rect data-space="1.09" x="600" y="12.59" width="93.14" height="168.14" class="map__space"></rect>
+								<rect data-space="1.08" x="698.07" y="12" width="93.14" height="168.14" class="map__space"></rect>
+								<rect x="796.13" y="12" width="93.14" height="107.12" class="map__space"></rect>
+								<rect x="894.18" y="12" width="93.14" height="107.12" class="map__space"></rect>
+								<rect data-space="1.03" x="991.9" y="12" width="195.4" height="339.1" class="map__space"></rect>
+								<rect x="602" y="278.06" width="385.71" height="72.46" class="map__space"></rect>
+								<rect x="48.89" y="209.37" width="169.92" height="94.85" class="map__space"></rect>
+								<rect data-space="1.02" x="49.12" y="110.57" width="254.49" height="94.85" class="map__space"></rect>
+								<rect data-space="1.06" x="49.09" y="12.16" width="334.73" height="94.85" class="map__space"></rect>
+								<polygon points="898.12 182.42 919.31 194.53 919.31 218.74 898.12 230.85 876.93 218.74 876.93 194.53 898.12 182.42" class="map__space"></polygon>
+								<polygon points="49.18 309.14 218.94 309.14 218.94 358.1 277.46 358.1 277.46 474.63 11.72 474.63 11.72 365.63 49.18 365.63 49.18 309.14" class="map__space"></polygon>
+								<polygon data-space="1.01" points="12.72 685.56 153.78 685.56 153.78 747.64 215.44 747.64 215.44 712.85 263.89 712.85 263.89 787.41 12.72 787.41 12.72 685.56" class="map__space"></polygon>
+								<rect x="48.08" y="501.73" width="35.61" height="35.23" class="map__space"></rect>
+								<rect x="94.01" y="501.73" width="35.61" height="35.23" class="map__space"></rect>
+								<rect x="139.5" y="501.73" width="35.61" height="35.23" class="map__space"></rect>
+								<rect x="48.3" y="547.25" width="35.61" height="35.23" class="map__space"></rect>
+								<rect x="94.24" y="547.25" width="35.61" height="35.23" class="map__space"></rect>
+								<rect x="139.72" y="547.25" width="35.61" height="35.23" class="map__space"></rect>
+								<rect x="282.3" y="478.13" width="26.26" height="25.99" class="map__space"></rect>
+								<polygon points="218.01 585.07 239.2 597.17 239.2 621.38 218.01 633.49 196.82 621.38 196.82 597.17 218.01 585.07" class="map__space"></polygon>
+								<polygon points="410.01 601.42 358.8 778.44 320.06 767.07 372.92 591.6 410.01 601.42" class="map__space"></polygon>
+								<polygon points="561.3,603.9 624,777 661.9,763.2 597.7,591.5" class="map__space"></polygon>
+							</svg>
+							<div class="level__pins">
+								<a class="pin pin--1-8" data-category="3" data-space="1.08" href="#" aria-label="Pin for Hatco">
+									<span class="pin__icon">
+										<img src="hatco.96b3d17e.png" class="img-fluid img-thumbnail" alt="Hatco">
+									</span>
+								</a>
+								<a class="pin pin--1-2" data-category="3" data-space="1.02" href="#" aria-label="Pin for Roller Grill">
+									<span class="pin__icon">
+										<img src="roller_grill.cab559be.jpg" class="img-fluid img-thumbnail" alt="Roller Grill">
+									</span>
+								</a>
+							
+							</div>
+							<!-- /level__pins -->
+						</div>
+						<div class="level level--2" aria-label="Hall 2">
+							<svg class="map map--2" viewBox="0 0 1200 800" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+								<title>Map Hall 2</title>
+								<polygon points="1035.94 787.41 1035.94 423.16 855.37 423.16 855.37 350.52 1187.28 350.52 1187.28 12.59 548.09 12.59 548.09 68.87 437.36 68.87 437.36 12.59 49.37 12.59 49.37 366.5 12.72 366.5 12.72 787.41 356.2 787.41 414.93 584.41 554.4 584.41 627.81 787.41 1035.94 787.41" class="map__ground"></polygon>
+								<path d="M1187.28,12.59V350.52H855.37v72.64h180.58V787.41H627.81l-73.41-203H414.93l-58.73,203H12.72V366.5H49.37V12.59h388V68.87H548.08V12.59h639.19M1200,0H535.36V56.28H450.09V0H36.65V353.91H0V800H365.8l2.64-9.13L424.52,597H545.44l70.39,194.65,3,8.35h429.82V410.57H868.09V363.11H1200V0h0Z" class="map__outline"></path>
+								<polygon points="768.46 722.99 789.65 735.1 789.65 759.31 768.46 771.42 747.27 759.31 747.27 735.1 768.46 722.99" class="map__space"></polygon>
+								<rect x="666.88" y="565.62" width="26.26" height="25.99" class="map__space"></rect>
+								<path data-space="2.07" d="M454.76,266.19h63a24.34,24.34,0,0,1,24.47,24.21h0V489.82A24.34,24.34,0,0,1,517.74,514h-63a24.34,24.34,0,0,1-24.47-24.21h0V290.4a24.34,24.34,0,0,1,24.47-24.21h0Z" class="map__space"></path>
+								<path d="M492.72,123.19c30.57,0,55.36-24.53,55.36-54.78H437.36C437.36,98.67,462.15,123.19,492.72,123.19Z" class="map__space"></path>
+								<polygon points="898.12 182.42 919.31 194.53 919.31 218.74 898.12 230.85 876.93 218.74 876.93 194.53 898.12 182.42" class="map__space"></polygon>
+								<rect x="282.3" y="478.13" width="26.26" height="25.99" class="map__space"></rect>
+								<polygon data-space="2.06" points="395.25 652.42 12.72 652.42 12.72 787.41 356.2 787.41 395.25 652.42" class="map__space"></polygon>
+								<rect data-space="2.02" x="12.72" y="366.5" width="157.39" height="212.11" class="map__space"></rect>
+								<rect x="49.37" y="12.59" width="120.74" height="120.74" class="map__space"></rect>
+								<rect data-space="2.01" x="177.56" y="12" width="240.03" height="121.33" class="map__space"></rect>
+								<rect x="49.37" y="170.48" width="60.37" height="60.37" class="map__space"></rect>
+								<rect x="49.37" y="238.6" width="278.23" height="111.92" class="map__space"></rect>
+								<rect data-space="2.05" x="600" y="12" width="93.14" height="249.1" class="map__space"></rect>
+								<rect x="702.59" y="12.59" width="484.68" height="98.51" class="map__space"></rect>
+								<rect data-space="2.03" x="968.07" y="120.1" width="219.21" height="230.42" class="map__space"></rect>
+								<rect x="855.37" y="277.6" width="103.7" height="72.92" class="map__space"></rect>
+								<circle data-space="2.04" cx="680.68" cy="466.59" r="66.59" class="map__space"></circle>
+								<rect data-space="2.08" x="855.37" y="423.16" width="180.58" height="364.25" class="map__space"></rect>
+								<polygon points="627.81 787.41 716.09 787.41 716.09 646.58 576.88 646.58 627.81 787.41" class="map__space"></polygon>
+							</svg>
+							<div class="level__pins">
+								<a class="pin pin--2-1" data-category="3" data-space="2.01" href="#" aria-label="Pin for Garland">
+									<span class="pin__icon">
+										<img src="garland.810c9352.png" class="img-fluid img-thumbnail" alt="Garland">
+									</span>
+								</a>
+								<a class="pin pin--2-2" data-category="3" data-space="2.02" href="#" aria-label="Pin for Unox">
+									<span class="pin__icon">
+										<img src="unox.eb807d8b.png" class="img-fluid img-thumbnail" alt="Unox">
+									</span>
+								</a>
+							</div>
+							<!-- /level__pins -->
+						</div>
+						<div class="level level--3" aria-label="Hall 3">
+							<svg class="map map--3" viewBox="0 0 1200 800" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+								<title>Map Hall 3</title>
+								<polygon points="1035.94 787.41 1035.94 423.16 855.37 423.16 855.37 350.52 1187.28 350.52 1187.28 12.59 548.09 12.59 548.09 68.87 437.36 68.87 437.36 12.59 49.37 12.59 49.37 366.5 12.72 366.5 12.72 787.41 356.2 787.41 414.93 584.41 554.4 584.41 627.81 787.41 1035.94 787.41" class="map__ground"></polygon>
+								<path d="M1187.28,12.59V350.52H855.37v72.64h180.58V787.41H627.81l-73.41-203H414.93l-58.73,203H12.72V366.5H49.37V12.59h388V68.87H548.08V12.59h639.19M1200,0H535.36V56.28H450.09V0H36.65V353.91H0V800H365.8l2.64-9.13L424.52,597H545.44l70.39,194.65,3,8.35h429.82V410.57H868.09V363.11H1200V0h0Z" class="map__outline"></path>
+								<rect x="666.9" y="565.6" width="26.3" height="26" class="map__space"></rect>
+								<path data-space="3.07" d="M454.8,266.2h63c13.4-0.1,24.4,10.8,24.5,24.2c0,0,0,0,0,0l0,0v199.4c-0.1,13.4-11.1,24.3-24.5,24.2h-63c-13.4,0.1-24.4-10.8-24.5-24.2c0,0,0,0,0,0l0,0V290.4C430.3,277,441.3,266.1,454.8,266.2C454.7,266.2,454.7,266.2,454.8,266.2L454.8,266.2L454.8,266.2z" class="map__space"></path>
+								<polygon points="898.1,182.4 919.3,194.5 919.3,218.7 898.1,230.9 876.9,218.7 876.9,194.5 " class="map__space"></polygon>
+								<rect x="282.3" y="478.1" width="26.3" height="26" class="map__space"></rect>
+								<rect x="381.5" y="12.6" width="55.8" height="55.8" class="map__space"></rect>
+								<rect x="566" y="12.6" width="110.6" height="110.6" class="map__space"></rect>
+								<rect x="566" y="157.4" width="110.6" height="73.5" class="map__space"></rect>
+								<rect x="742" y="12.6" width="445.3" height="110.6" class="map__space"></rect>
+								<rect data-space="3.03" x="972.8" y="128.5" width="214.5" height="222" class="map__space"></rect>
+								<rect x="756" y="423.2" width="279.9" height="161.2" class="map__space"></rect>
+								<rect x="876.9" y="591.6" width="159" height="195.8" class="map__space"></rect>
+								<polygon data-space="3.04" points="871.6,680 589.4,680 627.8,787.4 871.6,787.4 " class="map__space"></polygon>
+								<circle data-space="3.06" cx="735.7" cy="343.8" r="55.7" class="map__space"></circle>
+								<rect x="12.7" y="696" width="91.4" height="91.4" class="map__space"></rect>
+								<rect x="12.7" y="591.6" width="146.9" height="97.9" class="map__space"></rect>
+								<rect data-space="3.02" x="12.7" y="366.5" width="146.9" height="217.9" class="map__space"></rect>
+								<polygon data-space="3.05" points="356.2,787.4 414.9,584.4 275.1,584.4 275.1,787.4 " class="map__space"></polygon>
+								<rect data-space="3.01" x="49.4" y="12.6" width="312.7" height="343" class="map__space"></rect>
+							</svg>
+							<div class="level__pins">
+								<a class="pin pin--3-1" data-category="3" data-space="3.01" href="#" aria-label="Pin for Bertos">
+									<span class="pin__icon">
+										<img src="bertos.94f70f4e.jpg" class="img-fluid img-thumbnail" alt="Hatco">
+									</span>
+								</a>
+								<a class="pin pin--3-2" data-category="3" data-space="3.02" href="#" aria-label="Pin for Robot Coupe">
+									<span class="pin__icon">
+										<img src="robot-coupe.d0c75a05.jpg" class="img-fluid img-thumbnail" alt="Hatco">
+									</span>
+								</a>
+							</div>
+							<!-- /level__pins -->
+						</div>
+						<div class="level level--4" aria-label="Hall 4">
+							<svg class="map map--4" viewBox="0 0 1200 800" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+								<title>Map Hall 2</title>
+								<polygon points="1035.94 787.41 1035.94 423.16 855.37 423.16 855.37 350.52 1187.28 350.52 1187.28 12.59 548.09 12.59 548.09 68.87 437.36 68.87 437.36 12.59 49.37 12.59 49.37 366.5 12.72 366.5 12.72 787.41 356.2 787.41 414.93 584.41 554.4 584.41 627.81 787.41 1035.94 787.41" class="map__ground"></polygon>
+								<path d="M1187.28,12.59V350.52H855.37v72.64h180.58V787.41H627.81l-73.41-203H414.93l-58.73,203H12.72V366.5H49.37V12.59h388V68.87H548.08V12.59h639.19M1200,0H535.36V56.28H450.09V0H36.65V353.91H0V800H365.8l2.64-9.13L424.52,597H545.44l70.39,194.65,3,8.35h429.82V410.57H868.09V363.11H1200V0h0Z" class="map__outline"></path>
+								<path d="M674.5,647c2,16.3,29.2,31.3,51.4,28.9c51.9-5.8,80.3-107.4,64.7-119c-6.4-4.7-27.9,11.2-70.8,43.1C676.6,632,673.7,640.5,674.5,647z" class="map__lake"></path>
+								<ellipse cx="738.82" cy="595.48" rx="13.95" ry="13.8" class="map__tree"></ellipse>
+								<ellipse cx="768.46" cy="605.4" rx="13.95" ry="13.8" class="map__tree"></ellipse>
+								<ellipse cx="744.64" cy="624.92" rx="13.95" ry="13.8" class="map__tree"></ellipse>
+								<rect x="666.9" y="565.6" width="26.3" height="26" class="map__space"></rect>
+								<path data-space="4.05" d="M454.8,266.2h63c13.4-0.1,24.4,10.8,24.5,24.2c0,0,0,0,0,0l0,0v199.4c-0.1,13.4-11.1,24.3-24.5,24.2h-63c-13.4,0.1-24.4-10.8-24.5-24.2c0,0,0,0,0,0l0,0V290.4C430.3,277,441.3,266.1,454.8,266.2C454.7,266.2,454.7,266.2,454.8,266.2L454.8,266.2L454.8,266.2z" class="map__space"></path>
+								<rect x="282.3" y="478.1" width="26.3" height="26" class="map__space"></rect>
+								<rect x="12.7" y="366.5" width="202.4" height="175.1" class="map__space"></rect>
+								<rect x="12.7" y="550.6" width="50.9" height="236.8" class="map__space"></rect>
+								<circle data-space="4.07" cx="143.1" cy="708.1" r="49.5" class="map__space"></circle>
+								<circle data-space="4.01" cx="288.6" cy="658.6" r="66" class="map__space"></circle>
+								<polygon data-space="4.02" points="49.4,354.1 362.1,354.1 362.1,230.9 600,230.9 600,297.1 855.4,297.1 855.4,12.6 548.1,12.6 548.1,68.9 437.4,68.9 437.4,12.6 49.4,12.6 " class="map__space"></polygon>
+								<rect x="1065.6" y="12.6" width="121.7" height="110.5" class="map__space"></rect>
+								<rect data-space="4.03" x="1065.6" y="132.1" width="121.7" height="218.4" class="map__space"></rect>
+								<polygon points="901.3,92.6 886.9,67.8 901.3,43 929.9,43 944.2,67.8 929.9,92.6 " class="map__space"></polygon>
+								<polygon points="953.3,129.1 938.6,103.6 953.3,78.1 982.8,78.1 997.5,103.6 982.8,129.1 " class="map__space"></polygon>
+								<rect x="951.6" y="213.1" width="73.5" height="73.5" class="map__space"></rect>
+								<rect data-space="4.06" x="639.6" y="399.5" width="151.5" height="121.1" class="map__space"></rect>
+								<rect data-space="4.04" x="855.4" y="423.2" width="180.6" height="364.2" class="map__space"></rect>
+								<polygon points="613.2,747 846.6,658.6 846.6,787.4 627.8,787.4" class="map__space"></polygon>
+							</svg>
+							<div class="level__pins">
+								<a class="pin pin--4-1" data-category="3" data-space="4.01" href="#" aria-label="Pin for Cold Soup Kitchen">
+									<span class="pin__icon">
+										<img src="hatco.96b3d17e.png" class="img-fluid img-thumbnail" alt="Hatco">
+									</span>
+								</a>
+								<a class="pin pin--4-2" data-category="3" data-space="4.02" href="#" aria-label="Pin for Specifi">
+									<span class="pin__icon">
+										<img src="Specifi.24b37d5d.jpg" class="img-fluid img-thumbnail" alt="Specifi">
+									</span>
+								</a>
+								<a class="pin pin--4-3" data-category="3" data-space="4.03" href="#" aria-label="Pin for Tecnoinox">
+									<span class="pin__icon">
+										<img src="tecnoinox.ce26920d.jpg" class="img-fluid img-thumbnail" alt="Tecnoinox">
+									</span>
+								</a>
+							</div>
+							<!-- /level__pins -->
+						</div>
+					</div>
+					<!-- /levels -->
+				</div>
+				<!-- /mall -->
+				
+				<div class="content">
+					<div class="content__item" data-space="1.02" data-category="3">
+						<h3 class="content__item-title">Roller Grill</h3>
+						<div class="content__item-details">
+							<p class="content__meta">
+								<span class="content__meta-item"><strong>Country:</strong> United States</span> 
+								<span class="content__meta-item"><i class="fa fa-link"></i> <a href="https://www.rollergrill-international.com/" target="_blank">rollergrill-international.com</a></span>
+							</p>
+							<p class="content__desc">Burdock celery - salsify, tomatillo. Bitter gourd horseradish leaves radicchio, celeriac miner's lettuce kurrat arugula fluted pumpkin turnip, arracacha water spinach nopal.</p>
+						</div>
+					</div>
+					<div class="content__item" data-space="1.08" data-category="3">
+						<h3 class="content__item-title">Hatco</h3>
+						<div class="content__item-details">
+							<p class="content__meta">
+								<span class="content__meta-item"><strong>Country:</strong> United States</span> 
+								<span class="content__meta-item"><i class="fa fa-link"></i> <a href="https://www.hatcocorp.com/" target="_blank">hatcocorp.com</a></span>
+							</p>
+							<p class="content__desc">Acmella oleracea brassica rapa chinensis group apios americana taraxacum officinale brassica rapa pekinensis group.</p>
+						</div>
+					</div>
+					
+					<div class="content__item" data-space="2.01" data-category="3">
+						<h3 class="content__item-title">Garland</h3>
+						<div class="content__item-details">
+							<p class="content__meta">
+								<span class="content__meta-item"><strong>Group:</strong> Welbitl</span> 
+								<span class="content__meta-item"><strong>Phone:</strong> (0) 66 9866756</span>
+							</p>
+							<p class="content__desc">Summer purslane horseradish catsear kurrat, winter melon bitter gourd. Tomato, florence fennel; garden rocket;</p>
+						</div>
+					</div>
+					<div class="content__item" data-space="2.02" data-category="3">
+						<h3 class="content__item-title">Unox S.p.a.</h3>
+						<div class="content__item-details">
+							<p class="content__meta">
+								<span class="content__meta-item"><strong>Opening Hours:</strong> 8:30AM &mdash; 11:30PM</span> 
+								<span class="content__meta-item"><strong>Phone:</strong> (0) 66 4539810</span>
+							</p>
+							<p class="content__desc">Salsify garlic scallion manioc plectranthus summer purslane water chestnut cucumber radish garlic. Daikon winter melon moth bean.</p>
+						</div>
+					</div>
+
+					<div class="content__item" data-space="3.01" data-category="3">
+						<h3 class="content__item-title">Bertos</h3>
+						<div class="content__item-details">
+							<p class="content__meta">
+								<span class="content__meta-item"><strong>Opening Hours:</strong> 8:30AM &mdash; 10:30PM</span> 
+								<span class="content__meta-item"><strong>Phone:</strong> (0) 66 8867298</span>
+							</p>
+							<p class="content__desc">Sweet pepper; squash, parsnip sierra leone bologi peanut tomatillo. Broccoli Rabe chrysanthemum leaves florence fennel fluted pumpkin, sweet potato or kumara scallion. </p>
+						</div>
+					</div>
+					<div class="content__item" data-space="3.02" data-category="3">
+						<h3 class="content__item-title">Robot Coupe</h3>
+						<div class="content__item-details">
+							<p class="content__meta">
+								<span class="content__meta-item"><strong>Opening Hours:</strong> 8:30AM &mdash; 10:30PM</span> 
+								<span class="content__meta-item"><strong>Phone:</strong> (0) 66 7756989</span>
+							</p>
+							<p class="content__desc">Glycine max tarhui, chocho valerianella locusta; cichorium endivia, cucumis sativus. Cyamopsis tetragonoloba - acmella oleracea. Lactuca sativa; cucurbita spp.</p>
+						</div>
+					</div>
+					
+					<div class="content__item" data-space="4.03" data-category="4">
+						<h3 class="content__item-title">Tecnoinox S.r.l.</h3>
+						<div class="content__item-details">
+							<p class="content__meta">
+								<span class="content__meta-item"><strong>Just An:</strong> example</span> 
+								<span class="content__meta-item"><strong>Phone:</strong> (0) 66 6743987</span>
+							</p>
+							<p class="content__desc">Manihot esculenta phytolacca americana corchorus olitorius, corchorus capsularis. Brassica rapa Pervidis or Komatsuna group dioscorea spp lepidium sativum, ipomoea aquatica - brassica rapa chinensis group spinacia oleracea. Phaseolus vulgaris macrotyloma uniflorum.</p>
+							<button class="btn btn-primary btn-lg" type="button">
+								<i class="fa fa-vr-cardboard"></i>
+								Virtual Booth
+							</button>
+						</div>
+					</div>
+					<div class="content__item" data-space="4.02" data-category="4">
+						<h3 class="content__item-title">Specifi LLC</h3>
+						<div class="content__item-details">
+							<p class="content__meta">
+								<span class="content__meta-item"><strong>Some data:</strong> value</span> 
+								<span class="content__meta-item"><strong>Someth:</strong> (0) 66 2289786</span>
+							</p>
+							<p class="content__desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+							<p class="content__desc mx-auto text-center">
+								<button class="btn btn-primary btn-lg" type="button">
+									<i class="fa fa-vr-cardboard"></i>
+									Virtual Booth
+								</button>
+							</p>
+						</div>
+					</div>
+					<div class="content__item" data-space="4.01" data-category="4">
+						<h3 class="content__item-title">Rational AG</h3>
+						<div class="content__item-details">
+							<p class="content__meta">
+								<span class="content__meta-item"><strong>Opening Hours:</strong> 8:30AM &mdash; 10:30PM</span> 
+								<span class="content__meta-item"><strong>Phone:</strong> (0) 66 9987879</span>
+							</p>
+							<p class="content__desc">Brassica oleracea Gemmifera group conopodium majus. Cichorium intybus brassica rapa subsp rapa brassica oleracea gemmifera group abelmoschus esculentus phaseolus vulgaris.</p>
+							<button class="btn btn-primary btn-lg" type="button">
+								<i class="fa fa-vr-cardboard"></i>
+								Virtual Booth
+							</button>
+						</div>
+					</div>
+					<button class="boxbutton boxbutton--dark content__button content__button--hidden" aria-label="Close details">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<!-- content -->
+			</div>
+			<!-- /main -->
+			<aside class="spaces-list" id="spaces-list">
+				<button class="btn btn-dark btn-lg close-search mt-2 mr-2" aria-label="Close details">
+					<i class="fa fa-times"></i>
+				</button>
+
+				<form class="form-inline ml-4 mr-2">
+					<div class="input-group mb-3 search-input-group">
+						<input class="form-control mr-sm-2 search__input" type="search" placeholder="Search" aria-label="Search">
+						<div class="input-group">
+							<div id="sort-by-name" class="btn-group-toggle" data-toggle="buttons">
+								<label class="btn btn-outline-secondary">
+									<input type="checkbox"> A - Z
+								</label>
+							</div>
+						</div>
+					</div>
+				</form>
+
+				<ul class="list grouped-by-category">
+					<li class="list__item" data-level="1" data-category="3" data-category-title="Static" data-space="1.08"><a href="#" class="list__link">Hatco</a></li>
+					<li class="list__item" data-level="2" data-category="3" data-category-title="Static" data-space="2.01"><a href="#" class="list__link">Garland</a></li>
+					<li class="list__item" data-level="1" data-category="3" data-category-title="Static" data-space="1.02"><a href="#" class="list__link">Roller Grill</a></li>
+					<li class="list__item" data-level="3" data-category="3" data-category-title="Static" data-space="3.01"><a href="#" class="list__link">Bertos</a></li>
+					<li class="list__item" data-level="2" data-category="3" data-category-title="Static" data-space="2.02"><a href="#" class="list__link">Unox</a></li>
+					<li class="list__item" data-level="3" data-category="3" data-category-title="Static" data-space="3.02"><a href="#" class="list__link">Robot Coupe</a></li>
+					<li class="list__item" data-level="4" data-category="4" data-category-title="Interactive" data-space="4.01"><a href="#" class="list__link">Rational</a></li>
+					<li class="list__item" data-level="4" data-category="4" data-category-title="Interactive" data-space="4.03"><a href="#" class="list__link">Tecnoinox</a></li>
+					<li class="list__item" data-level="4" data-category="4" data-category-title="Interactive" data-space="4.02"><a href="#" class="list__link">Specifi</a></li>
+				</ul>
+			</aside>
+			<!-- /spaces-list -->
+		</div>
+		<!-- /container -->
+		<script src="main.60b07f25.js"></script>
+	</body></html>
