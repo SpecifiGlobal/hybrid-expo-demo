@@ -723,6 +723,10 @@ body {
   stroke-width: 15px;
 }
 
+.pin--hoverable .pin__icon:hover {
+  transform: scale(1.2);
+}
+
 .icon--pin {
   width: 100%;
   height: 100%;
